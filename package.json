@@ -1,5 +1,6 @@
 {
-    "name": "paradise-nursery-shop",
+    "name": "bb-shop",
+    "homepage": "https://github.com/tomeztom/bb-shop",
     "private": true,
     "version": "0.0.0",
     "type": "module",
