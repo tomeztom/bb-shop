@@ -37,8 +37,8 @@ Make sure you have the following installed on your machine:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd botanical-bliss
+   git clone https://github.com/tomeztom/bb-shop.git
+   cd bb-shop
    ```
 
 2. **Install dependencies**:
@@ -48,7 +48,7 @@ Make sure you have the following installed on your machine:
 
 3. **Start the development server**:
    ```bash
-   npm run preview
+   npm run dev
    ```
 
 4. Open your browser and navigate to `http://localhost:5173` to view the application.
@@ -102,13 +102,6 @@ Configures the Redux store that holds the application's global state.
 - **Adding Items to Cart**: Click on "Add to Cart" on any product card.
 - **Viewing Cart**: Click on the cart icon in the header to view your selected items.
 - **Adjusting Quantities**: In the cart page, you can increase or decrease item quantities or remove them entirely.
-- **Checkout Process**: (Future implementation) A checkout button will eventually lead users through payment processes.
 
-## Contributing
 
-Contributions are welcome! If you have suggestions for improvements or want to add features, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
