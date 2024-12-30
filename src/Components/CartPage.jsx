@@ -21,6 +21,10 @@ function CartPage() {
         dispatch(removeFromCart(id));
     };
 
+    const handleCheckout = () => {
+        alert("Coming soon");
+    };
+
     return (
         <main className="cart-page">
             <section className="hero">
@@ -80,6 +84,7 @@ function CartPage() {
                             <button
                                 className="btn btn-primary"
                                 disabled={totalItems === 0}
+                                onClick={handleCheckout}
                             >
                                 Checkout
                                 <span className="btn-arrow">
