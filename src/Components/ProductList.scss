@@ -1,0 +1,22 @@
+.product-list {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-list__category {
+    margin-bottom: 40px;
+}
+
+.product-list__category h2 {
+    font-size: 3rem;
+    margin: 104px 0 64px;
+    font-weight: 222;
+}
+
+.product-list__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+    row-gap: 48px;
+}

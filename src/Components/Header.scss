@@ -1,0 +1,144 @@
+/* Header Styles */
+.header {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header__logo-container {
+  background-image: url("./assets/logo-background-small.svg");
+  background-size: cover;
+  height: 5.429rem;
+  left: .714rem;
+  position: absolute;
+  top: .714rem;
+  width: 9.357rem;
+  z-index: 1;
+}
+@media (min-width:768px) {
+  .header__logo-container {
+      background-image: url("./assets/logo-background.svg");
+      background-size: cover;
+      height: 8.214rem;
+      width: 15.714rem;
+  }
+}
+@media (min-width:1170px) {
+  .header__logo-container {
+      left: 1.071rem;
+      top: 1.071rem;
+  }
+}
+
+.header__logo-container::before,
+.header__logo-container::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-background);
+}
+
+.header__logo-container::before {
+  height: 69%;
+  left: -1px;
+  top: 0;
+  width: 2px;
+}
+
+.header__logo-container::after {
+  height: 2px;
+  left: 0;
+  top: -1px;
+  width: 89%;
+}
+
+.header__logo-image {
+  height: auto;
+  padding: .66rem .9rem;
+  width: 90px;
+}
+
+@media (min-width: 768px) {
+  .header__logo-image {
+      height: auto;
+      padding: .66rem .9rem;
+      width: 175px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.header__nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  clip-path: var(--sc-h96-min);
+}
+
+.header__nav-item {
+  margin: 0 1rem;
+}
+
+.header__nav-link {
+  color: var(--nav-link-color);
+  font-weight: 550;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.header__nav-link:hover {
+  color: var(--nav-link-color-hover);
+}
+.header__nav-link.active {
+  color: var(--nav-link-color-active);
+}
+
+.header__cart {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.header__cart-link {
+  align-items: center;
+  color: var(--color-background);
+  display: flex;
+  text-decoration: none;
+}
+
+.header__cart-icon {
+  fill: currentColor;
+  height: 28px;
+  width: 28px;
+}
+
+.header__cart-count {
+  align-items: center;
+  background-color: var(--color-background);
+  border-radius: 50%;
+  color: var(--color-primary);
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  height: 18px;
+  justify-content: center;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 18px;
+}

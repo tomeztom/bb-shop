@@ -1,0 +1,30 @@
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    clip-path: var(--sc-h96-min);
+}
+
+.card__details {
+    padding: 15px;
+}
+
+.card__name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.card__price {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666;
+}
