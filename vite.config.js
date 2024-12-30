@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "./",
   plugins: [react()],
+  build: {
+    outDir: 'dist', // Verzeichnis für die kompilierten Dateien
+    rollupOptions: {
+      input: 'index.html' // Sicherstellen, dass die richtige index.html verwendet wird
+    }
+  }
 })

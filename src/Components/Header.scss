@@ -1,144 +1,144 @@
 /* Header Styles */
 .header {
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1000;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
 }
 
 .header__container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 .header__logo-container {
-  background-image: url("./assets/logo-background-small.svg");
-  background-size: cover;
-  height: 5.429rem;
-  left: .714rem;
-  position: absolute;
-  top: .714rem;
-  width: 9.357rem;
-  z-index: 1;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' height='75' viewBox='0 0 131 75' width='131' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3CclipPath id='a'%3E%3Cpath d='m0 0h131v75h-131z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cpath clip-rule='evenodd' d='m5.37086 44.7028c4.68634-4.6863 12.22874-4.6863 27.31374-4.6863h51.9917c3.7249 0 5.5874 0 7.1361-.3087 6.3419-1.2641 11.2996-6.2215 12.5636-12.5634.309-1.5487.309-3.4112.309-7.1361 0-3.725 0-5.5874.308-7.1361 1.264-6.34191 6.222-11.29933 12.564-12.563495 1.548-.30870473 3.411-.308705 7.136-.308705h5.992l-129.999408.00019693-.001022 74.99990307v-2.9834c0-15.085.000003-22.6276 4.68629-27.3139z' fill='%23fffefc' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    height: 5.429rem;
+    left: 0.714rem;
+    position: absolute;
+    top: 0.714rem;
+    width: 9.357rem;
+    z-index: 1;
 }
-@media (min-width:768px) {
-  .header__logo-container {
-      background-image: url("./assets/logo-background.svg");
-      background-size: cover;
-      height: 8.214rem;
-      width: 15.714rem;
-  }
+@media (min-width: 768px) {
+    .header__logo-container {
+        background-image: url("data:image/svg+xml,%3Csvg fill='none' height='115' viewBox='0 0 221 115' width='221' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3CclipPath id='a'%3E%3Cpath d='m.114258 0h220v115h-220z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='m220.114.00697196h-4c-7.439 0-11.158-.00000597-14.217.78541504-8.833 2.267793-15.73 9.164853-17.998 17.997313-.785 3.059-.785 6.7785-.785 14.2173s0 11.1582-.785 14.2172c-2.268 8.8325-9.165 15.7296-17.998 17.9974-3.059.7854-6.778.7854-14.217.7854h-99.9997c-23.5702 0-35.3553 0-42.67771 7.3223-7.218036 7.2181-7.320868 18.7727-7.322332 41.6777v-115.007z' fill='%23fffefc'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: cover;
+        height: 8.214rem;
+        width: 15.714rem;
+    }
 }
-@media (min-width:1170px) {
-  .header__logo-container {
-      left: 1.071rem;
-      top: 1.071rem;
-  }
+@media (min-width: 1170px) {
+    .header__logo-container {
+        left: 1.071rem;
+        top: 1.071rem;
+    }
 }
 
 .header__logo-container::before,
 .header__logo-container::after {
-  content: "";
-  position: absolute;
-  background-color: var(--color-background);
+    content: "";
+    position: absolute;
+    background-color: var(--color-background);
 }
 
 .header__logo-container::before {
-  height: 69%;
-  left: -1px;
-  top: 0;
-  width: 2px;
+    height: 69%;
+    left: -1px;
+    top: 0;
+    width: 2px;
 }
 
 .header__logo-container::after {
-  height: 2px;
-  left: 0;
-  top: -1px;
-  width: 89%;
+    height: 2px;
+    left: 0;
+    top: -1px;
+    width: 89%;
 }
 
 .header__logo-image {
-  height: auto;
-  padding: .66rem .9rem;
-  width: 90px;
+    height: auto;
+    padding: 0.66rem 0.9rem;
+    width: 90px;
 }
 
 @media (min-width: 768px) {
-  .header__logo-image {
-      height: auto;
-      padding: .66rem .9rem;
-      width: 175px;
-  }
+    .header__logo-image {
+        height: auto;
+        padding: 0.66rem 0.9rem;
+        width: 175px;
+    }
 }
 
 .header__nav {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  padding: 1rem 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 1rem 0;
 }
 
 .header__nav-list {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 1rem;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.1);
-  clip-path: var(--sc-h96-min);
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    clip-path: var(--sc-h96-min);
 }
 
 .header__nav-item {
-  margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 .header__nav-link {
-  color: var(--nav-link-color);
-  font-weight: 550;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+    color: var(--nav-link-color);
+    font-weight: 550;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .header__nav-link:hover {
-  color: var(--nav-link-color-hover);
+    color: var(--nav-link-color-hover);
 }
 .header__nav-link.active {
-  color: var(--nav-link-color-active);
+    color: var(--nav-link-color-active);
 }
 
 .header__cart {
-  margin-right: 2rem;
-  position: relative;
+    margin-right: 2rem;
+    position: relative;
 }
 
 .header__cart-link {
-  align-items: center;
-  color: var(--color-background);
-  display: flex;
-  text-decoration: none;
+    align-items: center;
+    color: var(--color-background);
+    display: flex;
+    text-decoration: none;
 }
 
 .header__cart-icon {
-  fill: currentColor;
-  height: 28px;
-  width: 28px;
+    fill: currentColor;
+    height: 28px;
+    width: 28px;
 }
 
 .header__cart-count {
-  align-items: center;
-  background-color: var(--color-background);
-  border-radius: 50%;
-  color: var(--color-primary);
-  display: flex;
-  font-size: 12px;
-  font-weight: 600;
-  height: 18px;
-  justify-content: center;
-  position: absolute;
-  right: -8px;
-  top: -8px;
-  width: 18px;
+    align-items: center;
+    background-color: var(--color-background);
+    border-radius: 50%;
+    color: var(--color-primary);
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    height: 18px;
+    justify-content: center;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 18px;
 }
